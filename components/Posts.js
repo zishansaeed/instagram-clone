@@ -5,21 +5,21 @@ const Posts = () => {
   const posts = [
     {
       id: 100,
-      username: "zeeshan",
+      username: "zeeshnarain",
       userImg: "/profile.png",
       img: "/profile2.jpg",
       caption: "This is amazing instagram clone",
     },
     {
       id: 101,
-      username: "zeeshan",
+      username: "zeeshnarain",
       userImg: "/profile.png",
       img: "/profile.png",
       caption: "This is amazing instagram clone",
     },
     {
       id: 102,
-      username: "zeeshan",
+      username: "zeeshnarain",
       userImg: "/profile.png",
       img: "/profile.png",
       caption: "This is amazing instagram clone",

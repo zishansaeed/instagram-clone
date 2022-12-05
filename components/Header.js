@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { useSession } from "next-auth/react";
+import { HomeIcon } from "@heroicons/react/solid";
 import {
   SearchIcon,
   UserGroupIcon,
@@ -8,9 +10,10 @@ import {
   PlusCircleIcon,
 } from "@heroicons/react/outline";
 
-import { HomeIcon } from "@heroicons/react/solid";
-
 const Header = () => {
+  const { data: session } = useSession();
+  console.log(session);
+
   return (
     <div className="shadow-sm border-b bg-white sticky top-0 z-50 ">
       <div className="flex justify-between max-w-6xl mx-5 xl:mx-auto">
@@ -26,6 +29,7 @@ const Header = () => {
             objectFit="contain"
           />
         </div>
+
         {/* Middle - Input Search Field */}
         <div className="max-w-xs">
           <div className="relative mt-1 p-3 rounded-md ">
